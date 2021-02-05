@@ -1,0 +1,117 @@
+.over-comand {
+  font-family: $font-family-primary;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.166;
+  text-align: center;
+  letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  color: $font-color-secondary;
+}
+.comand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background: rgba(245, 244, 250, 1);
+
+  height: 708px;
+  left: 0px;
+  top: 1449px;
+  border-radius: 0px;
+}
+
+.fotospec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fotospros {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  outline: rgba(255, 255, 255, 1);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 16px;
+}
+
+.name {
+  font-family: $font-family-primary;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $font-color-secondary;
+  padding-top: 30px;
+}
+.profession {
+  font-family: $font-family-primary;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.187;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $color-secondary;
+  padding-top: 10px;
+}
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  background: $font-color-primary;
+  border-radius: 50%;
+  transition-property: background, transform;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+  &:hover,
+  &:focus {
+    background: $color-primary;
+  }
+  &:hover .social-list-link-icon,
+  &:focus .social-list-link-icon {
+    fill: $font-color-primary;
+  }
+}
+
+.social-list-link-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  transition-property: fill, transform;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+}

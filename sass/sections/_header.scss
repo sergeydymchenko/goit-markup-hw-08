@@ -1,0 +1,167 @@
+.navigation-item-link {
+  font-family: $font-family-primary;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  color: $font-color-secondary;
+  transition-property: color, transform;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+}
+.navigation-item {
+  position: relative;
+}
+.header-line {
+  position: absolute;
+  content: '';
+  display: flex;
+  width: 100%;
+  height: 4px;
+  background-color: $color-primary;
+  top: 250%;
+}
+
+.address-link {
+  display: flex;
+  font-family: $font-family-primary;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  color: $color-secondary;
+  transition-property: color, transform;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+}
+
+.header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: $font-color-primary;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.header .logo {
+  margin-right: 93px;
+}
+.navigation-item:not(:last-child) {
+  margin-right: 50px;
+}
+.adresssvg {
+  display: block;
+  width: 16px;
+  height: 16px;
+  fill: $color-secondary;
+  margin-right: 10px;
+  transition-property: fill, transform;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+}
+.adresssvg :hover,
+.adresssvg :focus {
+  fill: $color-primary;
+}
+.address-link:focus .adresssvg {
+  fill: $color-primary;
+}
+.address-link:hover .adresssvg {
+  fill: $color-primary;
+}
+.adress {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.header .address-link {
+  display: flex;
+  align-items: center;
+}
+.header-tell {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  font-family: $font-family-primary;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  color: $color-secondary;
+  transition-property: color, transform;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+}
+.telsvgitem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 31px;
+  align-items: center;
+}
+.header-tell:hover .telsvg {
+  fill: $color-primary;
+}
+.header-tell:focus .telsvg {
+  fill: $color-primary;
+}
+.telsvg {
+  display: flex;
+  width: 13px;
+  height: 26px;
+  fill: $color-secondary;
+  margin-right: 10px;
+  transition-property: fill, transform;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+}
+
+.telsvg:hover,
+.telsvg:focus {
+  fill: $color-primary;
+}
+.navigation-item :hover,
+.navigation-item :focus,
+.address-link:hover,
+.address-link:focus,
+.header-tell:hover,
+.header-tell:focus {
+  color: $color-primary;
+}
+
+.adress {
+  font-style: normal;
+}
+.header .header-tell {
+  font-style: normal;
+
+  margin-left: auto;
+}
+.logoweb {
+  color: $color-primary;
+}
+.logo-studio {
+  color: $font-color-secondary;
+}
+.logo {
+  font-family: $font-family-secondary;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.192;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+}

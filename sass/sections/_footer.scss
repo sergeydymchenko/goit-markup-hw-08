@@ -1,0 +1,170 @@
+.footer-conect {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.social-list-set {
+  display: flex;
+  align-items: center;
+}
+.footer-item-section {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer-social-list-item-icon {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  align-items: center;
+  justify-content: center;
+  transition-property: background, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-list-item-icon:hover,
+.footer-social-list-item-icon:focus {
+  background: #2196f3;
+}
+.footer-social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-social-list-item {
+  border-radius: 50%;
+}
+.footer-social-list-item-svg {
+  display: flex;
+  height: 16px;
+  align-items: center;
+  justify-content: center;
+  fill: white;
+}
+.footer-set {
+  display: flex;
+}
+.footerh {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-top: 12px;
+  color: #ffffff;
+}
+.footer-section {
+  width: 231px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-section:not(:first-child) {
+  margin-left: 70px;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background: #2f303a;
+}
+.footer .container {
+  display: flex;
+}
+
+.logo-studio-footer {
+  color: white;
+}
+.adress-kiyv {
+  padding-top: 20px;
+}
+.footer .address-link {
+  padding-top: 9px;
+}
+.footer .header-tell {
+  padding-top: 9px;
+}
+.footer-item {
+  display: flex;
+}
+.adress-kiyv {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+.form-footer {
+  width: 358px;
+  height: 50px;
+  margin-top: 20px;
+}
+.form-footer-input {
+  width: 358px;
+  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: #2f303a;
+  padding-left: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+.form-label-footer {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+  color: white;
+
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+
+  align-items: center;
+  letter-spacing: 0.03em;
+}
+.form-field-footer {
+  position: relative;
+}
+.footer-button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  left: 370px;
+  top: 0;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1, 875;
+
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+  padding: 13px;
+}
+.footer-form-svg {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+}

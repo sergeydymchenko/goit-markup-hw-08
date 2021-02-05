@@ -1,0 +1,74 @@
+.listsvg {
+  width: 65px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-requirements {
+  height: 251px;
+
+  margin-top: 94px;
+
+  display: flex;
+  justify-content: center;
+}
+.listsvg {
+  height: 120px;
+  width: 270px;
+  background-color: rgba(245, 244, 250, 1);
+  border-radius: 4px;
+}
+.list-item-svg {
+  width: 65px;
+  height: 70px;
+  transition-property: fill, transform;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+}
+
+.list-item-svg :hover,
+.list-item-svg:focus {
+  fill: $color-primary;
+}
+
+.list-of-requirements {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  flex-direction: row;
+
+  border: 1px solid rgba(238, 238, 238, 1);
+}
+.base-tegs {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-family: $font-family-primary;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+
+  color: $font-color-secondary;
+}
+.list-of-requirements-item:not(:last-child) {
+  margin-right: 30px;
+}
+.text-idea {
+  font-family: $font-family-primary;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: $color-secondary;
+}
