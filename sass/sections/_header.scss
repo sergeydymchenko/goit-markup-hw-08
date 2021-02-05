@@ -1,3 +1,48 @@
+.menu-button {
+  position: absolute;
+display: inline-flex;
+right: 15px;
+top: 10px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-width: 0;
+  }
+  button:active, button:focus {
+    outline: none;
+  }
+  button::-moz-focus-inner {
+    border: 0;
+  }
+.menu-button :focus {
+  fill: rgba(33, 150, 243, 1);
+  outline: #FFFFFF
+
+}
+.menu-button :hover {
+  fill: rgba(33, 150, 243, 1);
+
+}
+.menu-button .icon-cross {
+  display: none;
+}
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu  {
+  display: none;
+}
+.menu-container {
+  width: 480px;
+  height: 393px;
+  display: none;
+  background: #FFFFFF;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+.menu-container.is-open {
+  display: block;
+}
 .navigation-item-link {
   font-family: $font-family-primary;
   font-weight: 500;
