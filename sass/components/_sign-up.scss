@@ -1,0 +1,121 @@
+.sign-up__input {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 360px;
+    margin-right: 12px;
+  }
+
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: getColor("dark");
+  border-radius: 4px;
+  padding-left: 16px;
+
+  color: getColor("white");
+  outline: none;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  border-radius: 4px;
+
+  &::placeholder {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+.sign-up {
+  &__svg {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+  }
+
+  &__form {
+    @media screen and (max-width: 767px) {
+      display: block;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media screen and (min-width: 1199px) {
+      margin-left: 93px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 1199px) {
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 93px;
+      margin-top: 72px;
+    }
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: getColor("white");
+  }
+
+  &__send-btn {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: getColor("blue");
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    min-width: 200px;
+    height: 50px;
+    border-color: transparent;
+    padding-left: 29px;
+    padding-right: 62px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    outline: none;
+
+    color: getColor("white");
+  }
+}

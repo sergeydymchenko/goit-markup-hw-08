@@ -1,0 +1,62 @@
+.about-us__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-us {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
+  &__list {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  }
+
+  &__photo {
+    display: block;
+    width: 370px;
+    height: auto;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__text {
+    position: absolute;
+
+    @media screen and (min-width: 1200px) {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    left: 0;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+
+  &__title {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: getColor("black");
+    margin-bottom: 50px;
+  }
+}

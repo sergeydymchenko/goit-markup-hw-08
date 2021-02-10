@@ -1,0 +1,73 @@
+.services {
+  display: flex;
+
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  @media screen and (max-width: 391px) {
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-bottom: 40px;
+
+    &__item:nth-last-child(-n + 3) {
+      margin-top: 15px;
+    }
+    &__item:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  @media screen and (min-width: 392px) and (max-width: 767px) {
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-bottom: 40px;
+
+    &__item:nth-last-child(-n + 2) {
+      margin-top: 15px;
+    }
+    &__item:nth-child(3) {
+      margin-right: 0;
+    }
+  }
+
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+  }
+}
+.services__btn {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px getColor("blue");
+  padding: 6px 22px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 94px;
+    margin-bottom: 50px;
+  }
+
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: getColor("black");
+  background-color: getColor("inactive-bg-btn");
+  outline: none;
+  cursor: pointer;
+  transition: transitionFunc(color), transitionFunc(background-color);
+
+  &:hover,
+  &:focus {
+    color: getColor("white");
+    background-color: getColor("blue");
+  }
+}

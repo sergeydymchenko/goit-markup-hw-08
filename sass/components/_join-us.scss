@@ -1,0 +1,52 @@
+.join-us {
+  &__title {
+    margin-bottom: 20px;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-left: 70px;
+      margin-top: 72px;
+    }
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: getColor("white");
+  }
+
+  &__list {
+    display: flex;
+    @media screen and (max-width: 767px) {
+      justify-content: center;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-left: 70px;
+    }
+  }
+
+  &__link {
+    display: inline-flex;
+    fill: getColor("white");
+    background-color: getColor("sm-icon");
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: transitionFunc(background-color);
+  }
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+  &__link:hover,
+  &__link:focus {
+    background-color: getColor("blue");
+    cursor: pointer;
+  }
+}
