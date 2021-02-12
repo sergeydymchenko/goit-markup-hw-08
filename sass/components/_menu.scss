@@ -47,6 +47,12 @@
     &:hover,
     &:focus {
       fill: getColor("blue");
+      &:hover,
+    &:focus {
+      fill: getColor("blue");
+      outline: 0;
+    outline-offset: 0;
+    }
     }
   }
   @media screen and (min-width: 768px) {
